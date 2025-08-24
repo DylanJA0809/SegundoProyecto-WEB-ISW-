@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags and page title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aventones - Edit Ride</title>
+  <link rel="stylesheet" href="styles/newride.css"/>
+</head>
+<body>
+  <!-- Header with logo and navigation bar -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="Car Icon"/>
+      <span>AVENTONES</span>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <!-- Navigation links -->
+        <a href="searchrides.html">Home</a>
+        <a class="active" href="myrides.html">Rides</a>
+        <a href="bookings.html">Bookings</a>
+      </div>
+      <div class="nav-right">
+        <!-- Search bar and user dropdown -->
+        <input type="text" placeholder="Search..." />
+        <div class="user-icon">
+          <img src="imagenes/user-icon.png" alt="User Icon"/>
+          <div class="dropdown">
+            <a href="index.html">Logout</a>
+            <a href="editprofile.html">Profile</a>
+            <a href="configuration.html">Configuration</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h2>Edit Ride</h2>
+
+    <!-- Ride edit form -->
+    <form class="ride-form">
+      <div class="row">
+        <div class="input-group">
+          <label>Departure from</label>
+          <input type="text" value="Quesada" />
+        </div>
+        <div class="input-group">
+          <label>Arrive To</label>
+          <input type="text" value="Zarcero" />
+        </div>
+      </div>
+
+      <div class="row days">
+        <label>Days</label>
+        <div class="checkbox-group">
+          <!-- Days of the week checkboxes -->
+          <label><input type="checkbox" checked /> Mon</label>
+          <label><input type="checkbox" checked /> Tue</label>
+          <label><input type="checkbox" checked /> Wed</label>
+          <label><input type="checkbox" checked /> Thu</label>
+          <label><input type="checkbox" checked /> Fri</label>
+          <label><input type="checkbox" checked /> Sat</label>
+          <label><input type="checkbox" checked /> Sun</label>
+        </div>
+      </div>
+
+      <div class="time-seats-fee">
+        <div class="input-group">
+          <label>Time</label>
+          <select>
+            <option selected>10:00 am</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Seats</label>
+          <input type="number" value="2" />
+        </div>
+        <div class="input-group">
+          <label>Fee</label>
+          <input type="number" value="15" />
+        </div>
+      </div>
+
+      <!-- Vehicle details section -->
+      <div class="vehicle-section">
+        <div class="vehicle-section-title">Vehicle Details</div>
+        <div class="vehicle-details">
+          <div class="row">
+            <div class="input-group">
+              <label>Make</label>
+              <select>
+                <option selected>Nissan</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>Model</label>
+              <input type="text" value="Pathfinder" />
+            </div>
+            <div class="input-group">
+              <label>Year</label>
+              <select>
+                <option selected>2015</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form action buttons -->
+      <div class="form-actions">
+        <a href="myrides.html" class="cancel-link">Cancel</a>
+        <a href="ridedetails.html" class="create-btn">Save</a>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer navigation and copyright -->
+  <footer class="footer">
+    <nav>
+      <a href="searchrides.html">Home</a> |
+      <a href="myrides.html">Rides</a> |
+      <a href="bookings.html">Bookings</a> |
+      <a href="configuration.html">Settings</a> |
+      <a href="index.html">Login</a> |
+      <a href="register.html">Register</a>
+    </nav>
+    <p>&copy; Aventones.com</p>
+  </footer>
+</body>
+</html>

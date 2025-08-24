@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Search Rides</title>
+    <link rel="stylesheet" href="styles/searchrides.css" />
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Car Icon" />
+            <span>AVENTONES</span>
+        </div>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a class="active" href="#">Home</a>
+                <a href="myrides.html">Rides</a>
+                <a href="bookings.html">Bookings</a>
+            </div>
+            <div class="nav-right">
+                <input type="text" placeholder="Search..." />
+                <div class="user-icon">
+                    <img src="imagenes/user-icon.png" alt="User Icon" />
+                    <div class="dropdown">
+                        <a href="index.html">Logout</a>
+                        <a href="editprofile.html">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2 style="font-size: 35px;">Search rides</h2>
+        <!-- Search form for rides -->
+        <div class="search-box">
+            <form>
+                <div class="row">
+                    <div class="search-left">
+                        <label for="from">From</label>
+                        <select id="from">
+                            <option>Quesada</option>
+                        </select>
+                    </div>
+                    <div class="search-right">
+                        <label for="to">To</label>
+                        <select id="to">
+                            <option>Zarcero</option>
+                        </select>
+                        <button type="submit">Find rides</button>
+                    </div>
+                </div>
+                <div class="row centered">
+                    <label>Days</label>
+                    <div class="checkbox-group">
+                        <!-- Days selection checkboxes -->
+                        <label><input type="checkbox" checked /> Mon</label>
+                        <label><input type="checkbox" checked /> Tue</label>
+                        <label><input type="checkbox" checked /> Wed</label>
+                        <label><input type="checkbox" checked /> Thu</label>
+                        <label><input type="checkbox" checked /> Fri</label>
+                        <label><input type="checkbox" checked /> Sat</label>
+                        <label><input type="checkbox" checked /> Sun</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Info about search results -->
+        <div class="results-info">
+            Rides found from <strong>Quesada</strong> to <strong>Zarcero</strong>
+        </div>
+
+        <!-- Table with ride results -->
+        <table class="booking-table">
+            <thead>
+                <tr>
+                    <th>Driver</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Seats</th>
+                    <th>Car</th>
+                    <th>Fee</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user-cell">
+                        <img src="imagenes/user-icon.png" class="profile-pic" alt="user" />
+                        barroyo
+                    </td>
+                    <td>Quesada</td>
+                    <td>Alajuela</td>
+                    <td>2</td>
+                    <td>Nissan Pathfinder 2015</td>
+                    <td>$5</td>
+                    <td><a href="#" class="action-link">Request</a></td>
+                </tr>
+                <tr>
+                    <td class="user-cell">
+                        <img src="imagenes/user-icon.png" class="profile-pic" alt="user" />
+                        barroyo
+                    </td>
+                    <td>Quesada</td>
+                    <td>Naranjo</td>
+                    <td>1</td>
+                    <td>Toyota Corolla 2020</td>
+                    <td>$10</td>
+                    <td><a href="#" class="action-link">Request</a></td>
+                </tr>
+                <tr>
+                    <td class="user-cell">
+                        <img src="imagenes/user-icon.png" class="profile-pic" alt="user" />
+                        yluna
+                    </td>
+                    <td>Aguas Zarcas</td>
+                    <td>Naranjo</td>
+                    <td>1</td>
+                    <td>Ford Festiva 1990</td>
+                    <td>–</td>
+                    <td><a href="#" class="action-link">Request</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Map image -->
+        <div style="margin-top: 30px; text-align: center;">
+            <img src="imagenes/mapa.png" alt="Map" style="max-width: 100%; border: 1px solid #ccc;" />
+        </div>
+    </main>
+
+    <!-- Footer navigation -->
+    <footer class="footer">
+        <nav>
+            <a href="configuration.html">Home</a> |
+            <a href="myrides.html">Rides</a> |
+            <a href="bookings.html">Bookings</a> |
+            <a href="editprofile.html">Settings</a> |
+            <a href="index.html">Login</a> |
+            <a href="register.html">Register</a>
+        </nav>
+        <p>Aventones.com</p>
+    </footer>
+</body>
+</html>

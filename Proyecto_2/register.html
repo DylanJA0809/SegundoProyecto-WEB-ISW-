@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration - Aventones</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles/styles_Login_Register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Logo image and app name -->
+            <img src="imagenes/logo.png" alt="Aventones Logo">
+            <h1>AVENTONES</h1>
+        </div>
+        <h2 class="userRegistration">User Registration</h2>
+        <form id="registration_form">
+            <div class="row">
+                <!-- First and Last Name fields -->
+                <div class="field">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+
+            <div class="field">
+                <!-- Email field -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="row">
+                <!-- Password and Repeat Password fields -->
+                <div class="field">
+                    <label for="password" class="top-margin">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="field">
+                    <label for="repeatPassword" class="top-margin">Repeat Password</label>
+                    <input type="password" id="repeatPassword" name="repeatPassword">
+                </div>
+            </div>
+
+            <div class="field">
+                <!-- Address field -->
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <div class="row">
+                <!-- Country and State fields -->
+                <div class="field">
+                    <label for="country" class="top-margin">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Seleccione...</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="México">México</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="state" class="top-margin">State</label>
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- City and Phone Number fields -->
+                <div class="field">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+            </div>
+
+            <p class="links">
+                <!-- Links for login and driver registration -->
+                <span>Already an user? <a href="index.html">Login here</a></span>
+                <span>Register as driver? <a href="registerdriver.html">Click here</a></span>
+            </p>
+
+            <!-- Submit button -->
+            <button type="submit">Sign up</button>
+        </form>
+
+        <footer>
+            <!-- Navigation links in footer -->
+            <nav>
+                <a href="searchrides.html">Home</a> | 
+                <a href="myrides.html">Rides</a> | 
+                <a href="bookings.html">Bookings</a> | 
+                <a href="editprofile.html">Settings</a> | 
+                <a href="index.html">Login</a> | 
+                <a href="register.html">Register</a>
+            </nav>
+            <p>&copy; Aventones.com</p>
+        </footer>
+    </div>
+    <script src="scripts/starting.js"></script>
+</body>
+</html>
