@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags and page title -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="styles/editprofile.css" />
+  <style>
+    /* Ocultamos los campos de conductor por defecto */
+    .driver-fields { display: none; }
+  </style>
+</head>
+<body>
+  <!-- Header with logo and navigation bar -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="Car Icon" />
+      <span>AVENTONES</span>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a class="active" href="searchrides.html">Home</a>
+        <a href="myrides.html">Rides</a>
+        <a href="bookings.html">Bookings</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search..." />
+        <div class="user-icon">
+          <img src="imagenes/user-icon.png" alt="User Icon" />
+          <div class="dropdown">
+            <a href="#" onclick="logout()" >Logout</a>
+            <a href="configuration.html">Settings</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content: Edit profile form -->
+  <main class="main">
+    <h2>Edit Profile</h2>
+
+    <form class="edit-form">
+      <!-- Name fields -->
+      <div class="row">
+        <div class="input-group">
+          <label for="profile-fname">First Name</label>
+          <input id="profile-fname" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="profile-lname">Last Name</label>
+          <input id="profile-lname" type="text" />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="row">
+        <div class="input-group full">
+          <label for="profile-email">Email</label>
+          <input id="profile-email" type="email" />
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="row">
+        <div class="input-group">
+          <label for="profile-pass">Password</label>
+          <input id="profile-pass" type="password" />
+        </div>
+        <div class="input-group">
+          <label for="profile-pass2">Repeat Password</label>
+          <input id="profile-pass2" type="password" />
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="row">
+        <div class="input-group full">
+          <label for="profile-address">Address</label>
+          <input id="profile-address" type="text" />
+        </div>
+      </div>
+
+      <!-- Country / State -->
+      <div class="row">
+        <div class="input-group">
+          <label for="profile-country">Country</label>
+          <select id="profile-country">
+            <option>Costa Rica</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="profile-state">State</label>
+          <input id="profile-state" type="text" />
+        </div>
+      </div>
+
+      <!-- City / Phone -->
+      <div class="row">
+        <div class="input-group">
+          <label for="profile-city">City</label>
+          <input id="profile-city" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="profile-phone">Phone Number</label>
+          <input id="profile-phone" type="text" />
+        </div>
+      </div>
+
+      <!-- Driver-only fields -->
+      <div class="row driver-fields">
+        <div class="input-group">
+          <label for="profile-plate">Plate</label>
+          <input id="profile-plate" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="profile-year">Year</label>
+          <input id="profile-year" type="text" />
+        </div>
+      </div>
+
+      <div class="row driver-fields">
+        <div class="input-group">
+          <label for="profile-model">Model</label>
+          <input id="profile-model" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="profile-brand">Brand</label>
+          <input id="profile-brand" type="text" />
+        </div>
+      </div>
+
+      <!-- Form actions: Cancel and Save -->
+      <div class="form-actions">
+        <a href="javascript:history.back()" class="cancel-link">Cancel</a>
+        <button type="submit" class="create-btn">Save</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer with navigation links -->
+  <footer class="footer">
+    <nav>
+      <a href="searchrides.html">Home</a> |
+      <a href="myrides.html">Rides</a> |
+      <a href="bookings.html">Bookings</a> |
+      <a href="editprofile.html">Settings</a> |
+      <a href="#" onclick="logout()" >Login</a> |
+      <a href="#" onclick="logoutRegister()" >Register</a>
+    </nav>
+    <p>&copy; Aventones.com</p>
+  </footer>
+
+  <script src="scripts/validation.js"></script>
+  <script src="scripts/profile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login - Aventones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="styles/styles_Login_Register.css">
+    </head>
+    <body>
+        <div class="login-box">
+            <!-- Logo section -->
+            <div class="logoLogin">
+                <img src="imagenes/logo.png" alt="Logo Aventones">
+                <h1>AVENTONES</h1>
+            </div>
+
+            <!-- Google sign-in button -->
+            <button class="google-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="Google icon">
+                Sign in with Google
+            </button>
+
+            <p class="orLogin">Or</p>
+
+            <!-- Login form -->
+            <form class="login-form">
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <!-- Link to registration page -->
+                <p class="register-link">
+                    Not an user? <a href="register.html">Register Now</a>
+                </p>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Footer navigation -->
+        <footer>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">Rides</a> |
+                <a href="#">Bookings</a> |
+                <a href="#">Settings</a> |
+                <a href="index.html">Login</a> |
+                <a href="register.html">Register</a>
+            </nav>
+            <p>&copy; Aventones.com</p>
+        </footer>
+        <script src="scripts/starting.js"></script>
+    </body>
+</html>

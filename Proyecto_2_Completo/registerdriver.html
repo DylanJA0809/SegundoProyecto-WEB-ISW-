@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Provider Registration - Aventones</title>
+    <link rel="stylesheet" href="styles/styles_Login_Register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Aventones Logo">
+            <h1>AVENTONES</h1>
+        </div>
+
+        <h2 class="userRegistration">Driver Registration</h2>
+
+        <form id="registration_form">
+            <div class="row">
+                <div class="field">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" id="idNumber" name="idNumber">
+                </div>
+                <div class="field">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="field">
+                    <label for="repeatPassword">Repeat Password</label>
+                    <input type="password" id="repeatPassword" name="repeatPassword">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="brand">Vehicle Brand</label>
+                    <input type="text" id="brand" name="brand">
+                </div>
+                <div class="field">
+                    <label for="model">Vehicle Model</label>
+                    <input type="text" id="model" name="model">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="year">Vehicle Year</label>
+                    <input type="number" id="year" name="year" min="1900" max="2099">
+                </div>
+                <div class="field">
+                    <label for="plate">License Plate</label>
+                    <input type="text" id="plate" name="plate">
+                </div>
+            </div>
+
+            <p class="links">
+                <span>Already a user? <a href="index.html">Login here</a></span>
+                <span>Go back to <a href="register.html">User registration</a></span>
+            </p>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <footer>
+            <nav>
+                <a href="#">Home</a> | 
+                <a href="#">Rides</a> | 
+                <a href="#">Bookings</a> | 
+                <a href="#">Settings</a> | 
+                <a href="index.html">Login</a> | 
+                <a href="register.html">Register</a>
+            </nav>
+            <p>&copy; Aventones.com</p>
+        </footer>
+    </div>
+    <script src="scripts/starting.js"></script>
+</body>
+</html>
